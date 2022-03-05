@@ -23,10 +23,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] Add a rounded corners for the images using the Glide transformations. (1 point)
 
 ### App Walkthough GIF
-
-
-https://user-images.githubusercontent.com/33812146/156867642-7efb8fb7-92c3-4634-b14e-84edefbdfa90.mp4
-
+<img src="https://submissions.us-east-1.linodeobjects.com/android_university_kotlin/qFPW37ao.gif" width=250><br>
 
 ### Notes
 
