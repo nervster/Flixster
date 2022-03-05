@@ -1,7 +1,12 @@
 package com.example.flixster
 
+import android.os.Parcelable
+import kotlinx.parcelize.IgnoredOnParcel
+import kotlinx.parcelize.Parcelize
 import org.json.JSONArray
 
+
+@Parcelize
 data class Movie(
     val movieId: Int,
     val title: String,
@@ -9,8 +14,10 @@ data class Movie(
     private val posterPath: String,
     private val backdropPath: String,
     val vote: Double
-) {
+) : Parcelable {
+    @IgnoredOnParcel
     val postImageUrl = "https://image.tmdb.org/t/p/w342$posterPath"
+    @IgnoredOnParcel
     val backImageUrl = "https://image.tmdb.org/t/p/w342$backdropPath"
     // calls method on class without an instance
     companion object {
